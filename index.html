@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Sai Sravani </title>
+    <!-- ****************************** Favicon Food Meal ************************************* -->
+
+
+
+    <!--**********************************     Bootsrap CSS LINK ADD   *****************************-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ****************************    Bootsrap Icon Link  Add    ****************************** -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!----****************************     CSS Link Add   *****************************************8---->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!-- ***********************  Body ******************************* -->
+
+<body>
+    <!-- ****************  Notification *************** -->
+
+
+    <!-- ******************************       NAVBAR       *********************************** -->
+    <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Food Meal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+
+                        <!--******************--Favourite Dishes   ***************************** -->
+                        <a class="nav-link text-primary" href="./favMeal.html" role="button" id="favMeal">
+                            <i class="bi bi-heart-fill text-primary "></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- ****************************   Search Bar For Dishes  *************************** -->
+                <div class="d-flex">
+                    <input class="form-control" type="search" id="search-input" placeholder="Search Meal"
+                        aria-label="Search">
+                    <button class="btn btn-success" id="search-btn" type="button" title="Search for all products">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- *************************** Container Start **************************************** -->
+
+    <!-- <ul class="notifications"></ul> -->
+
+    <div class="container-fluid ">
+        <div class="meal-wrapper ">
+            <div class="meal-search">
+                <h2 class="title text-center">Food Meal Recipe</h2>
+            </div>
+          
+
+            </div>
+            <div class="meal-result">
+
+                <!--  *******************************    API Get  ***********************************-->
+                <div id="meal">
+
+                </div>
+            </div>
+
+
+            <div class="meal-details ">
+                <!------------------------------------------- close Meal Detail Page   -------------------- -->
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                    <i class="bi bi-x-circle-fill"></i>
+                </button>
+
+
+                <div class="meal-details-content">
+
+                </div>
+            </div>
+
+            <!------------------------------ Footer------------------- -->
+            <div class="col-md-12 mb-5 bg-warning shadow">
+                <h4 class="text-center p-2">
+                    M Sai Sravani
+                </h4>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js" defer></script>
+
+</body>
+
+</html>
